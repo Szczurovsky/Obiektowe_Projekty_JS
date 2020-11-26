@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+section{
+    /* overflow: hidden; */
+    display:flex;
+    flex-direction: row;
+}
+img{
+  min-width: 99%;
+  max-height: 98vh;
+}
