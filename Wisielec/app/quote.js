@@ -1,12 +1,13 @@
-export class Quote {
-  constructor(text) {
-    this.text = text;
+export class Qoute{
+  constructor(text){
+    this.text=text;
     this.guessed = [];
   }
-  getContent() {
+
+  getContent(){
     let content = "";
-    for (const char of this.text) {
-      if (char === " " || this.guessed.includes(char)) {
+    for(const char of this.text){
+      if (char == " " || this.guessed.includes(char)){
         content += char;
       } else {
         content += "_";
@@ -14,8 +15,8 @@ export class Quote {
     }
     return content;
   }
-  guess(letter) {
-    if (!this.text.includes(letter)) {
+  guess(letter){
+    if(!this.text.includes(letter)){
       return false;
     }
     this.guessed.push(letter);
